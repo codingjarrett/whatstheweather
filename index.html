@@ -1,46 +1,93 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" type="text/css" href="assets/style.css">
-    <title>Fall Weather</title>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Weather Dashboard</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/style.css">
 </head>
-
 <body>
-    <nav class="navbar navbar-dark bg-dark d-flex justify-content-center">
-        <span class="navbar-brand mb-0 h1">Fall Back Five-Day Forecast</span>
-    </nav>
+    <div class="jumbotron container-fluid mt-2 text-center p-2" style="background-color:orangered ;color: white;">
+        <h1> <strong>Fall Back Weather Forecast</strong></h1>
+    </div>
     <div class="container">
         <div class="row">
-            <div class="col-md-3 letsSearch">
-                <form>
-                    <h3>Where to?</h3>
-                    <div class="input-group">
-                        <input type="text" class="form-control" id="pickCity" placeholder="City Choice">
-                        <div class="input-group-append">
-                            <button type="enter" id="enterCity" class="btn btn-primary fas fa-search"></button>
-                        </div>
+            <div class="col-sm-4">
+                <h4 class="destination"><strong>Where would you like to go?</strong></h4>
+                <div class="input-group mb-3">
+                    <input type="text" class="form-control" id="finda-city" aria-label="City Search" aria-describedby="look-button">
+                    <div class="input-group-append">
+                        <button class="btn text-light" id="look-button"><i class="fa fa-search"></i></button>
                     </div>
-                </form>
-                <div id="searchHistory" class="btn-group-vertical">
                 </div>
-            </div>
-            <div class="col-md-9">
-                <div id="weatherToday">
-                    <h2>What's the weather like today?</h2>
+                <button class="btn btn-primary" type="button" id="delete-search">Reset Your List</button>
+                <ul class="list-group">
+
+                </ul>
+            </div>   
+            <div class="col-sm-8">
+                <div class="row ml-2">
+                    <div class="col-sm-12" id="current-weather">
+                        <h3 class="city-name mb-1 mt-2 bolder" id="this-city"></h3>
+                        <p>Today's Temps: <span class="current" id="cTemp"></span></p>
+                        <p>Humidity: <span class="current" id="cHum"></span></p> 
+                        <p>Wind Speed: <span class="current" id="cWind"></span></p> 
+                    </div>
                 </div>
-                <div>
-                    <h3>The Five-Day Fall Back Forecast:</h3>
-                    <div class="row" id="weatherFuture">
+                <div class="col-sm-12" id ="future-weather">
+                    <h3>Fall Back Five Day Forecast:</h3>
+                    <div class="d-flex justify-content-center"
+                        <div class="row text-light">
+                            <div class="col-sm-2 forecast text-white ml-2 mb-3 p-2 mt-2 squared card1">
+                                <p id="futDate0"></p>
+                                <p id="futImg0"></p>
+                                <p>Next Day Temp: <span id="futureTemp0"></span></p>
+                                <p>Next Day Humidity: <span id="futureHum0"></span></p>
+                                <p>Next Day Wind: <span id="futureWind0"></span></p>
+                            </div>
+                            <div class="col-sm-2 forecast text-white ml-2 mb-3 p-2 mt-2 squared card2" >
+                                <p id="futDate1"></p>
+                                <p id="futImg1"></p>
+                                <p>Future Temp: <span id="futureTemp1"></span></p>
+                                <p>Future Humidity: <span id="futureHum1"></span></p>
+                                <p>Future Wind: <span id="futureWind1"></span></p>
+                            </div>
+                            <div class="col-sm-2 forecast text-white ml-2 mb-3 p-2 mt-2 squared card3">
+                                <p id="futDate2"></p>
+                                <p id="futImg2"></p>
+                                <p>Future Temp: <span id="futureTemp2"></span></p>
+                                <p>Future Humidity: <span id="futureHum2"></span></p>
+                                <p>Future Wind: <span id="futureWind2"></span></p>
+                            </div>
+                            <div class="col-sm-2 forecast text-white ml-2 mb-3 p-2 mt-2 squared card4">
+                                <p id="futDate3"></p>
+                                <p id="futImg3"></p>
+                                <p>Future Temp: <span id="futureTemp3"></span></p>
+                                <p>Future Humidity: <span id="futureHum3"></span></p>
+                                <p>Future Wind: <span id="futureWind3"></span></p>
+                            </div>
+                            <div class="col-sm-2 forecast text-white ml-2 mb-3 p-2 mt-2 squared card5" >
+                                <p id="futDate4"></p>
+                                <p id="futImg4"></p>
+                                <p>Future Temp: <span id="futureTemp4"></span></p>
+                                <p>Future Humidity: <span id="futureHum4"></span></p>
+                                <p>Future Wind: <span id="futureWind4"></span></p>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
+		<footer class="mt-5 p-3 text-center"> Fall Back Weather Dashboard &copy 2022 Made for the University of Miami's Coding Bootcamp By <a href="https://github.com/codingjarrett" target="blank"> Jarrett Jennings!</a> </footer>
+
+    <!--jQuery JS-->
+    <script src="https://code.jquery.com/jquery.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/js/bootstrap.bundle.min.js"></script>
+    <!--Code to Jvascript File-->
     <script src="assets/script.js"></script>
 </body>
-
 </html>
