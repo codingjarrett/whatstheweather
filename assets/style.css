@@ -1,0 +1,98 @@
+*{
+    box-sizing: border-box;
+    }
+
+body {
+    
+    font-size: 16px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+
+h3{
+    font-weight: bold;
+    font-size: 17px;
+    }
+
+.forecast{  
+    font-size: 0.9em;
+    max-width: 100%;
+    }
+
+#delete-search{
+    background-color: blueviolet;
+    font-size: 13px;
+}
+
+body{
+    background-color: rgb(0, 0, 0);
+    color: white;
+}
+
+.destination{
+    font-size: 17px;
+    color: orangered;
+    padding-top: 10px;
+    font-size: 13px;
+}
+
+#future-weather{
+    padding-top: 10px;
+    background-color: rgb(0, 0, 0);
+    color: orangered;
+    text-align: center;
+    font-size: 13px;
+}
+
+list-group{
+    background-color: black;
+}
+
+.btn{
+    background-color: blueviolet;
+}
+
+#this-city{
+    font-size: 17px;
+    color: blueviolet;
+}
+
+.card1{
+background-color: orangered;
+}
+
+.card2{
+background-color: blueviolet;
+}
+
+.card3{
+background-color: orangered;
+}
+
+.card4{
+background-color: blueviolet;
+}
+
+.card5{
+background-color: orangered;
+}
+
+.list-group-item {
+    background-color: orangered;
+}
+
+footer{
+    background-color: black;
+    color: white;
+    font-size: 15px;
+    color: orangered;
+}
+
+span{
+    font-size: 1em;
+    }
+
+li:hover{
+    background-color: rgb(19, 159, 15);
+    text-decoration: underline;
+    color: white;
+    }
