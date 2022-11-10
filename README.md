@@ -16,7 +16,7 @@ AS A traveler, I want to see the weather outlook for multiple cities, so that I 
 ### City Forecast
 ![Screenshots of a city forecast](assets/images/city-forecast.png)
 
-### City Forecast
+### Saved City
 ![Screenshots of a city saved](assets/images/second-city.png)
 
 ## Link to deployed webpage: 
