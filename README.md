@@ -14,7 +14,10 @@ AS A traveler, I want to see the weather outlook for multiple cities, so that I 
 ![Screenshot of the project on a smaller screen](assets/images/smaller-screen.png)
 
 ### City Forecast
-![Screenshots of a city forecast](assets/images/city-forecast.png) 
+![Screenshots of a city forecast](assets/images/city-forecast.png)
+
+### City Forecast
+![Screenshots of a city saved](assets/images/second-city.png)
 
 ## Link to deployed webpage: 
 https://codingjarrett.github.io/whatstheweather/
